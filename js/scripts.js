@@ -7,9 +7,12 @@
 // Scripts
 // 
     var tiempo = 8000;
+    
 // intervalo
     var interval = setInterval(function() {
-    $('.slick-next.slick-arrow').trigger('click');
+        if(!$('.row.services-02-active.arrow-style').is(':hover') === true){
+            $('.slick-next.slick-arrow').trigger('click');
+        }   
     }, tiempo);
 window.addEventListener('DOMContentLoaded', event => {
     //click slider

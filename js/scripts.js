@@ -6,9 +6,16 @@
 //
 // Scripts
 // 
-
+    var tiempo = 8000;
+// intervalo
+    var interval = setInterval(function() {
+    $('.slick-next.slick-arrow').trigger('click');
+    }, tiempo);
 window.addEventListener('DOMContentLoaded', event => {
-
+    //click slider
+    
+    
+    
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
